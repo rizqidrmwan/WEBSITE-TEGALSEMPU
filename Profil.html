@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Dusun Tegalsempu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; }
+    main { flex: 1; }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans dark:bg-gray-900 dark:text-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-green-700 p-4 text-white flex justify-between items-center sticky top-0 z-50 shadow-md">
+    <a href="index.html" class="flex items-center space-x-2">
+      <span class="font-bold text-lg tracking-wide" id="nav-title">PADUKUHAN TEGALSEMPU</span>
+    </a>
+    <div class="space-x-6 flex items-center flex-wrap font-medium">
+      <a href="index.html" class="hover:text-yellow-300 transition" id="nav-home">Beranda</a>
+      <a href="Profil.html" class="hover:text-yellow-300 transition" id="nav-profile">Profil</a>
+      <a href="Sensus.html" class="hover:text-yellow-300 transition" id="nav-census">Sensus</a>
+      <a href="dokumentasi.php" class="hover:text-yellow-300 transition" id="nav-docs">Dokumentasi</a>
+
+      <!-- Tombol Bahasa & Mode -->
+      <button id="langToggle" class="px-3 py-1 bg-yellow-400 text-black rounded-md hover:bg-yellow-500 transition">EN</button>
+      <button id="modeToggle" class="px-3 py-1 bg-gray-800 text-white rounded-md hover:bg-gray-600 transition">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Konten utama -->
+  <main>
+    <!-- Sejarah Dusun -->
+<section class="p-6 bg-white dark:bg-gray-800 dark:text-gray-100 mt-4 shadow rounded max-w-4xl mx-auto">
+  <h2 class="text-xl font-bold mb-2" id="history-title">Sejarah Padukuhan</h2>
+  <p id="history-text" class="text-justify">
+    Padukuhan Tegalsempu merupakan salah satu bagian dari Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul. Pada masa sebelum tahun 1946, wilayah ini termasuk dalam Kalurahan Tunjungan, yang kemudian bersama dengan Kalurahan Gluntung, Tegallayang, dan Glagahan dilebur menjadi Desa Caturharjo pada bulan Oktober 1946. Pada masa awal berdirinya desa, Tegalsempu memiliki peran penting karena rumah salah satu warganya, Bapak Mento Dimejo, sempat digunakan sebagai kantor pemerintahan sementara.<br><br>
+
+    Selain memiliki nilai historis dalam pembentukan pemerintahan desa, Tegalsempu juga dikenal dengan tradisi budayanya yang masih lestari hingga sekarang. Tradisi Nyadran Tegalsempu digelar setiap Jumat Pahing di kompleks makam Tunjungan sebagai bentuk penghormatan kepada leluhur. Selain itu, masyarakat juga melaksanakan Genduri Majemukan atau Merti Dusun sebagai wujud rasa syukur dan kebersamaan warga, biasanya dipusatkan di halaman Masjid Baitul Abror.<br><br>
+
+    Dengan demikian, Padukuhan Tegalsempu bukan hanya bagian penting dari sejarah administratif Desa Caturharjo, tetapi juga menjadi pusat pelestarian tradisi dan nilai gotong royong masyarakat setempat.
+  </p>
+</section>
+
+<!-- Visi dan Misi -->
+<section class="p-6 bg-white dark:bg-gray-800 dark:text-gray-100 mt-4 shadow rounded max-w-4xl mx-auto">
+  <h2 class="text-xl font-bold mb-2" id="visi-title">Visi</h2>
+  <p class="mb-4 text-justify" id="visi-text">
+    “Terwujudnya masyarakat Tegalsempu yang sehat, tertib,sejahtera, cerdas, berbudaya dan berakhlak mulia”
+  </p>
+
+  <h2 class="text-xl font-bold mb-2" id="misi-title">Misi</h2>
+  <ul class="list-disc pl-5 text-justify">
+    <li id="misi1">Meningkatkan tingkat kesehatan masyarakat Padukuhan Tegalsempu</li>
+    <li id="misi2">Meningkatkan ketertiban dan kepatuhan seluruh warga dan perangkat Padukuhan Tegalsempu terhadap perundang-undangan yang berlaku</li>
+    <li id="misi3">Meningkatkan kesejahteraan warga Padukuhan Tegalsempu dengan optimalisasi sentra ekonomi kreatif dan perintisan dukuh wisata</li>
+    <li id="misi4">Meningkatkan tingkat pendidikan dan keterampilan warga Padukuhan Tegalsempu</li>
+    <li id="misi5">Melestarikan adat, tradisi dan budaya masyarakat Padukuhan Tegalsempu</li>
+    <li id="misi6">Meningkatkan iman dan taqwa warga Padukuhan Tegalsempu</li>
+  </ul>
+</section>
+
+
+
+    <!-- Struktur Dusun -->
+    <section class="p-6 bg-white dark:bg-gray-800 dark:text-gray-100 mt-4 shadow rounded max-w-4xl mx-auto">
+      <h2 class="text-xl font-bold mb-4" id="structure-title">Struktur Padukuhan</h2>
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold" id="headman">Kepala Padukuhan: Bapak Wartimin</h3>
+      </div>
+<!-- Grid RT -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+
+  <!-- RT 01 -->
+  <div class="bg-green-50 border border-green-200 rounded-xl p-6 shadow-md hover:shadow-lg transition dark:bg-green-900 dark:border-green-700 dark:text-gray-200">
+    <h4 class="font-bold text-xl mb-2 text-green-700 dark:text-green-300" id="rt1-title">RT 01</h4>
+    <p><span class="font-semibold" id="rt1-head">Ketua RT: Bapak Supardal</p>
+    <p><span class="font-semibold" id="rt1-kk">Jumlah KK: 64</p>
+    <p><span class="font-semibold" id="rt1-pop">Jumlah Penduduk: 160</p>
+  </div>
+
+  <!-- RT 02 -->
+  <div class="bg-green-50 border border-green-200 rounded-xl p-6 shadow-md hover:shadow-lg transition dark:bg-green-900 dark:border-green-700 dark:text-gray-200">
+    <h4 class="font-bold text-xl mb-2 text-green-700 dark:text-green-300" id="rt2-title">RT 02</h4>
+    <p><span class="font-semibold" id="rt2-head">Ketua RT: Bapak Sugito</p>
+    <p><span class="font-semibold" id="rt2-kk">Jumlah KK: 62</p>
+    <p><span class="font-semibold" id="rt2-pop">Jumlah Penduduk: 170</p>
+  </div>
+
+  <!-- RT 03 -->
+  <div class="bg-green-50 border border-green-200 rounded-xl p-6 shadow-md hover:shadow-lg transition dark:bg-green-900 dark:border-green-700 dark:text-gray-200">
+    <h4 class="font-bold text-xl mb-2 text-green-700 dark:text-green-300" id="rt3-title">RT 03</h4>
+    <p><span class="font-semibold" id="rt3-head">Ketua RT: Bapak Suratijan</p>
+    <p><span class="font-semibold" id="rt3-kk">Jumlah KK: 55</p>
+    <p><span class="font-semibold" id="rt3-pop">Jumlah Penduduk: 144</p>
+  </div>
+
+  <!-- RT 04 -->
+  <div class="bg-green-50 border border-green-200 rounded-xl p-6 shadow-md hover:shadow-lg transition dark:bg-green-900 dark:border-green-700 dark:text-gray-200">
+    <h4 class="font-bold text-xl mb-2 text-green-700 dark:text-green-300" id="rt4-title">RT 04</h4>
+    <p><span class="font-semibold" id="rt4-head">Ketua RT: Kemis Riyanto</p>
+    <p><span class="font-semibold" id="rt4-kk">Jumlah KK: 54</p>
+    <p><span class="font-semibold" id="rt4-pop">Jumlah Penduduk: 143</p>
+  </div>
+
+</div>
+    </section>
+
+  <!-- Lokasi Dusun -->
+<section id="location-section" class="p-6 bg-white dark:bg-gray-800 dark:text-gray-100 mt-4 shadow rounded max-w-4xl mx-auto">
+  <div class="bg-green-50 border border-green-200 rounded-xl p-6 shadow-md hover:shadow-lg transition dark:bg-green-900 dark:border-green-700 dark:text-gray-200">
+    <h1 class="text-2xl font-bold mb-4" id="location-title">Lokasi Padukuhan Tegalsempu</h1>
+    <iframe id="location-map" class="w-full h-96 rounded shadow"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.708967812689!2d114.360!3d-8.457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1234567890!2sTegal%20Sempu!5e0!3m2!1sen!2sid!4v0000000000"
+      allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-green-800 text-white py-10">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-start gap-6 px-6">
+      <div class="flex-1 min-w-[250px] text-center md:text-left">
+        <a href="https://www.youtube.com/@tegalsemputv" target="_blank">
+          <img src="Assets/youtube.png" alt="YouTube" class="w-14 mx-auto md:mx-0 mb-4">
+        </a>
+        <h3 class="text-xl font-bold" id="footer-title">PADUKUHAN TEGALSEMPU</h3>
+        <p class="mt-2 text-sm" id="footer-desc">
+          Website Resmi Pemerintah Padukuhan Tegalsempu,<br>
+          Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul
+        </p>
+      </div>
+      <div class="flex-1 min-w-[250px]">
+        <h3 class="font-bold text-lg mb-2" id="footer-contact">HUBUNGI KAMI</h3>
+        <p class="text-sm leading-relaxed" id="footer-address">
+          Jalan Tegalsempu,<br>
+          Padukuhan Tegalsempu, Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul<br>
+          Provinsi Daerah Istimewa Yogyakarta, Indonesia, 55761.
+        </p>
+      </div>
+    </div>
+    <div class="text-center border-t border-gray-400 mt-6 pt-4 text-sm">
+      <p>&copy; 2025 Padukuhan Tegalsempu. All Rights Reserved.</p>
+      <p><b>KKN Reguler 145 UAD Unit V.D.2</b></p>
+    </div>
+  </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Data Bahasa
+  const langData = {
+    id: {
+      "nav-home": "Beranda",
+      "nav-profile": "Profil",
+      "nav-census": "Sensus",
+      "location-title": "Lokasi Dusun Tegalsempu",
+      "rt1-title": "RT 01",
+      "rt2-title": "RT 02",
+      "rt3-title": "RT 03",
+      "rt4-title": "RT 04",
+      "rt1-kk": "Jumlah KK: 64",
+      "rt2-kk": "Jumlah KK: 62",
+      "rt3-kk": "Jumlah KK: 55",
+      "rt4-kk": "Jumlah KK: 54",
+      "rt1-head": "Ketua RT: Bapak Supardal",
+      "rt2-head": "Ketua RT: Bapak Sugito",
+      "rt3-head": "Ketua RT: Bapak Suratijan",
+      "rt4-head": "Ketua RT: Bapak Kemis Riyanto",
+      "rt1-pop": "Jumlah Penduduk: 160",
+      "rt2-pop": "Jumlah Penduduk: 170",
+      "rt3-pop": "Jumlah Penduduk: 144",
+      "rt4-pop": "Jumlah Penduduk: 143",
+      "nav-docs": "Dokumentasi",
+      "footer-title": "PADUKUHAN TEGALSEMPU",
+      "structure-title": "Struktur Padukuhan",
+      "history-title": "Sejarah Padukuhan",
+      "headman": "Kepala Padukuhan: Bapak Wartimin",
+      "history-text": "Padukuhan Tegalsempu merupakan salah satu bagian dari Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul. Pada masa sebelum tahun 1946, wilayah ini termasuk dalam Kalurahan Tunjungan, yang kemudian bersama dengan Kalurahan Gluntung, Tegallayang, dan Glagahan dilebur menjadi Desa Caturharjo pada bulan Oktober 1946. Pada masa awal berdirinya desa, Tegalsempu memiliki peran penting karena rumah salah satu warganya, Bapak Mento Dimejo, sempat digunakan sebagai kantor pemerintahan sementara.<br><br>Selain memiliki nilai historis dalam pembentukan pemerintahan desa, Tegalsempu juga dikenal dengan tradisi budayanya yang masih lestari hingga sekarang. Tradisi Nyadran Tegalsempu digelar setiap Jumat Pahing di kompleks makam Tunjungan sebagai bentuk penghormatan kepada leluhur. Selain itu, masyarakat juga melaksanakan Genduri Majemukan atau Merti Dusun sebagai wujud rasa syukur dan kebersamaan warga, biasanya dipusatkan di halaman Masjid Baitul Abror.<br><br>Dengan demikian, Padukuhan Tegalsempu bukan hanya bagian penting dari sejarah administratif Desa Caturharjo, tetapi juga menjadi pusat pelestarian tradisi dan nilai gotong royong masyarakat setempat.",
+      "footer-desc": "Website Resmi Pemerintah Padukuhan Tegalsempu,<br>Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul",
+      "footer-contact": "HUBUNGI KAMI",
+      "footer-address": "Jalan Tegalsempu,<br>Padukuhan Tegalsempu, Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul<br>Provinsi DIY, Indonesia, 55761.",
+      "visi-title": "Visi",
+      "visi-text": "“Terwujudnya masyarakat Tegalsempu yang sehat, tertib,sejahtera, cerdas, berbudaya dan berakhlak mulia”",
+      "misi-title": "Misi",
+      "misi1": "Meningkatkan tingkat kesehatan masyarakat Padukuhan Tegalsempu",
+      "misi2": "Meningkatkan ketertiban dan kepatuhan seluruh warga dan perangkat Padukuhan Tegalsempu terhadap perundang-undangan yang berlaku",
+      "misi3": "Meningkatkan kesejahteraan warga Padukuhan Tegalsempu dengan optimalisasi sentra ekonomi kreatif dan perintisan dukuh wisata",
+      "misi4": "Meningkatkan tingkat pendidikan dan keterampilan warga Padukuhan Tegalsempu",
+      "misi5": "Melestarikan adat, tradisi dan budaya masyarakat Padukuhan Tegalsempu",
+      "misi6": "Meningkatkan iman dan taqwa warga Padukuhan Tegalsempu"
+    },
+    en: {
+      "nav-home": "Home",
+      "nav-profile": "Profile",
+      "nav-census": "Census",
+      "location-title": "Location of Tegalsempu Hamlet",
+      "rt1-title": "RT 01",
+      "rt2-title": "RT 02",
+      "rt3-title": "RT 03",
+      "rt4-title": "RT 04",
+      "rt1-head": "Head of RT: Mr. Supardal",
+      "rt2-head": "Head of RT: Mr. Sugito",
+      "rt3-head": "Head of RT: Mr. Suratijan",
+      "rt4-head": "Head of RT: Mr. Kemis Riyanto",
+      "rt1-kk": "Households: 64",
+      "rt2-kk": "Households: 62",
+      "rt3-kk": "Households: 55",
+      "rt4-kk": "Households: 54",
+      "rt1-pop": "Population: 160",
+      "rt2-pop": "Population: 170",
+      "rt3-pop": "Population: 144",
+      "rt4-pop": "Population: 143",
+      "nav-docs": "Documentation",
+      "structure-title": "Organizational Structure of Tegalsempu Hamlet",
+      "footer-title": "TEGALSEMPU HAMLET",
+      "history-title": "History of the Hamlet",
+      "headman": "Head of Hamlet: Mr. Wartimin",
+      "history-text": "Tegalsempu Hamlet is one of the hamlets within Caturharjo Village, Pandak Subdistrict, Bantul Regency. Before 1946, this area was part of Tunjungan Village, which, together with Gluntung, Tegallayang, and Glagahan Villages, was merged into Caturharjo Village in October 1946. In the early years of the village’s establishment, Tegalsempu played an important role as the house of one of its residents, Mr. Mento Dimejo, was temporarily used as the administrative office of the village government.<br><br>In addition to its historical significance in the formation of the village administration, Tegalsempu is also well known for its cultural traditions that remain preserved to this day. The Nyadran Tegalsempu tradition is held every Friday Pahing at the Tunjungan cemetery complex as a form of respect for the ancestors. Moreover, the community also organizes the Genduri Majemukan or Merti Dusun, a communal feast expressing gratitude and togetherness, usually centered in the courtyard of Baitul Abror Mosque.<br><br>Thus, Tegalsempu Hamlet is not only an important part of the administrative history of Caturharjo Village but also a center for preserving traditions and the spirit of mutual cooperation within the local community.",
+      "footer-desc": "Official Website of Tegalsempu Hamlet,<br> Caturharjo Village, Pandak District, Bantul Regency",
+      "footer-contact": "CONTACT US",
+      "footer-address": "Tegalsempu Street,<br>Tegalsempu Hamlet, Caturharjo Village, Pandak District, Bantul Regency<br>Special Region of Yogyakarta, Indonesia, 55761.",
+      "visi-title": "Vision",
+      "visi-text": "“The realization of Tegalsempu community that is healthy, orderly, prosperous, intelligent, cultured, and of noble character”",
+      "misi-title": "Mission",
+      "misi1": "Improving the health level of Tegalsempu Hamlet community",
+      "misi2": "Enhancing order and compliance of all residents and hamlet officials with existing regulations",
+      "misi3": "Increasing community welfare through optimization of creative economy centers and the initiation of tourism programs",
+      "misi4": "Improving education and skills of Tegalsempu residents",
+      "misi5": "Preserving customs, traditions, and culture of Tegalsempu community",
+      "misi6": "Strengthening the faith and piety of Tegalsempu residents"
+    }
+  };
+
+  // Toggle Bahasa
+  const langToggle = document.getElementById("langToggle");
+  let currentLang = "id";
+  langToggle.addEventListener("click", () => {
+    currentLang = currentLang === "id" ? "en" : "id";
+    for (const key in langData[currentLang]) {
+      const el = document.getElementById(key);
+      if (el) el.innerHTML = langData[currentLang][key];
+    }
+    langToggle.innerText = currentLang === "id" ? "EN" : "ID";
+  });
+
+  // Toggle Dark Mode
+  const modeToggle = document.getElementById("modeToggle");
+  const html = document.documentElement; // gunakan <html>
+  modeToggle.addEventListener("click", () => {
+    html.classList.toggle("dark");
+    if (html.classList.contains("dark")) {
+      modeToggle.innerText = "☀️";
+    } else {
+      modeToggle.innerText = "🌙";
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

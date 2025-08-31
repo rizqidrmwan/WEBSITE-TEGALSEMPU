@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Sensus per RT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 text-black flex flex-col min-h-screen transition-colors duration-500" id="body">
+   <!-- Navbar -->
+  <nav class="bg-green-700 p-4 text-white flex justify-between items-center sticky top-0 z-50 shadow-md" id="navbar">
+    <a href="index.html" class="flex items-center space-x-2">
+      <span class="font-bold text-lg tracking-wide" id="nav-title">PADUKUHAN TEGALSEMPU</span>
+    </a>
+    <div class="space-x-6 flex items-center flex-wrap font-medium">
+      <a href="index.html" class="hover:text-yellow-300 transition" id="nav-home">Beranda</a>
+      <a href="Profil.html" class="hover:text-yellow-300 transition" id="nav-profile">Profil</a>
+      <a href="Sensus.html" class="hover:text-yellow-300 transition" id="nav-census">Sensus</a>
+      <a href="dokumentasi.php" class="hover:text-yellow-300 transition" id="nav-docs">Dokumentasi</a>
+
+      <!-- Tombol Bahasa & Mode -->
+      <button id="langToggle" class="px-3 py-1 bg-yellow-400 text-black rounded-md hover:bg-yellow-500 transition">EN</button>
+      <button id="modeToggle" class="px-3 py-1 bg-gray-800 text-white rounded-md hover:bg-gray-600 transition">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Konten -->
+  <section class="p-6 flex-grow">
+    <h1 class="text-2xl font-bold mb-4" id="page-title">Data Jumlah Penduduk (RT)</h1>
+    <canvas id="chartPenduduk" width="400" height="200"></canvas>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-800 text-white py-10 transition-colors duration-500" id="footer">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-start gap-6 px-6">
+      
+      <!-- Kolom Kiri -->
+      <div class="flex-1 min-w-[250px] text-center md:text-left">
+        <a href="https://www.youtube.com/@tegalsemputv" target="_blank">
+          <img src="Assets/youtube.png" alt="YouTube" class="w-14 mx-auto md:mx-0 mb-4">
+        </a>
+        <h3 class="text-xl font-bold" id="footer-title">PADUKUHAN TEGALSEMPU</h3>
+        <p class="mt-2 text-sm" id="footer-desc">
+          Website Resmi Pemerintah Padukuhan Tegalsempu,<br>
+          Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul
+        </p>
+      </div>
+
+      <!-- Kolom Kanan -->
+      <div class="flex-1 min-w-[250px]">
+        <h3 class="font-bold text-lg mb-2" id="footer-contact">HUBUNGI KAMI</h3>
+        <p class="text-sm leading-relaxed" id="footer-address">
+          Jalan Tegalsempu,<br>
+          Padukuhan Tegalsempu, Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul<br>
+          Provinsi Daerah Istimewa Yogyakarta, Indonesia, 55761.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center border-t border-gray-400 mt-6 pt-4 text-sm">
+      <p>&copy; 2025 Padukuhan Tegalsempu. All Rights Reserved.</p>
+      <p><b>KKN Reguler 145 UAD Unit V.D.2</b></p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // ==== Chart ====
+    const ctx = document.getElementById('chartPenduduk').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['RT 1', 'RT 2', 'RT 3', 'RT 4'],
+        datasets: [{
+          label: 'Jumlah Penduduk',
+          data: [160, 170, 144, 143],
+          backgroundColor: ['#38a169', '#2b6cb0', '#c53030', '#d69e2e']
+        }]
+      },
+      options: { responsive: true }
+    });
+
+    // ==== Bahasa ====
+    const translations = {
+      id: {
+        home: "Beranda",
+        profile: "Profil",
+        census: "Sensus",
+        docs: "Dokumentasi",
+        footertitle: "PADUKUHAN TEGALSEMPU",
+        title: "Data Jumlah Penduduk (RT)",
+        footerContact: "HUBUNGI KAMI",
+        footerDesc: "Website Resmi Pemerintah Padukuhan Tegalsempu,<br>Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul",
+        footeraddress: "Jalan Tegalsempu,<br>Padukuhan Tegalsempu, Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul<br>Provinsi DIY, Indonesia, 55761.",
+        chartLabel: "Jumlah Penduduk"
+      },
+      en: {
+        home: "Home",
+        profile: "Profile",
+        census: "Census",
+        docs: "Documentation",
+        footertitle: "TEGALSEMPU HAMLET",
+        title: "Population Data (RT)",
+        footerContact: "CONTACT US",
+        footerDesc: "Official Website of Tegalsempu Hamlet,<br>Caturharjo Village, Pandak Subdistrict, Bantul Regency",
+        footeraddress: "Tegalsempu Street,<br>Tegalsempu Hamlet, Caturharjo Village, Pandak District, Bantul Regency<br>Special Region of Yogyakarta, Indonesia, 55761.",
+        chartLabel: "Total Population"
+      }
+    };
+
+    let currentLang = "id";
+    document.getElementById("langToggle").addEventListener("click", () => {
+      currentLang = currentLang === "id" ? "en" : "id";
+      const t = translations[currentLang];
+      document.getElementById("nav-home").innerHTML = t.home;
+      document.getElementById("nav-profile").innerHTML = t.profile;
+      document.getElementById("nav-census").innerHTML = t.census;
+      document.getElementById("nav-docs").innerHTML = t.docs;
+      document.getElementById("page-title").innerHTML = t.title;
+      document.getElementById("footer-title").innerHTML = t.footertitle;
+      document.getElementById("footer-address").innerHTML = t.footeraddress;
+      document.getElementById("footer-contact").innerHTML = t.footerContact;
+      document.getElementById("footer-desc").innerHTML = t.footerDesc;
+      chart.data.datasets[0].label = t.chartLabel;
+      chart.update();
+
+      // ganti teks tombol
+      document.getElementById("langToggle").innerHTML = currentLang === "id" ? "EN" : "ID";
+    });
+
+    // ==== Mode Gelap / Terang ====
+    document.getElementById("modeToggle").addEventListener("click", () => {
+      document.getElementById("body").classList.toggle("bg-gray-900");
+      document.getElementById("body").classList.toggle("text-white");
+      document.getElementById("navbar").classList.toggle("bg-green-900");
+      document.getElementById("footer").classList.toggle("bg-green-900");
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+

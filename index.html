@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padukuhan Tegalsempu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans transition-colors duration-500" id="body">
+
+  <!-- Navbar -->
+  <nav class="bg-green-700 p-4 text-white flex justify-between items-center sticky top-0 z-50 shadow-md">
+    <a href="index.html" class="flex items-center space-x-2">
+      <span class="font-bold text-lg tracking-wide" id="nav-title">PADUKUHAN TEGALSEMPU</span>
+    </a>
+    <div class="space-x-6 flex items-center flex-wrap font-medium">
+      <a href="index.html" class="hover:text-yellow-300 transition" id="nav-home">Beranda</a>
+      <a href="Profil.html" class="hover:text-yellow-300 transition" id="nav-profile">Profil</a>
+      <a href="Sensus.html" class="hover:text-yellow-300 transition" id="nav-census">Sensus</a>
+      <a href="dokumentasi.php" class="hover:text-yellow-300 transition" id="nav-docs">Dokumentasi</a>
+
+      <!-- Tombol Bahasa & Mode -->
+      <button id="langToggle" class="px-3 py-1 bg-yellow-400 text-black rounded-md hover:bg-yellow-500 transition">EN</button>
+      <button id="modeToggle" class="px-3 py-1 bg-gray-800 text-white rounded-md hover:bg-gray-600 transition">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="Assets/gambar.jpg" alt="Gambar Desa" class="w-full h-[700px] object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40 flex flex-col items-center justify-center text-white text-center px-6 space-y-2">
+      <img src="Assets/lambang.png" alt="Lambang" class="h-110 w-80 shadow-lg">
+      <h2 class="text-5xl font-extrabold drop-shadow-lg" id="hero-title">Selamat Datang di Website Resmi</h2>
+      <p class="text-lg drop-shadow-md" id="hero-subtitle">Padukuhan Tegalsempu, Desa Caturharjo, Kecamatan Pandak</p>
+    </div>
+  </section>
+
+    <!-- Highlight Section -->
+  <section class="py-16 px-6 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-center text-green-700 mb-10" id="about-title">Tentang Padukuhan Kami</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition dark:bg-gray-800 dark:text-gray-200">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-lg overflow-hidden">
+          <img src="Assets/petani.png" alt="Petani" class="w-full h-full object-cover">
+        </div>
+        <h4 class="font-bold text-xl mb-2" id="card1-title">Mayoritas Petani</h4>
+        <p class="text-gray-600 dark:text-gray-300" id="card1-text">
+          Warga Tegalsempu mayoritas bekerja sebagai petani, menjaga ketahanan pangan dan kelestarian lingkungan.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition dark:bg-gray-800 dark:text-gray-200">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-lg overflow-hidden">
+          <img src="Assets/gotongroyong.png" alt="Gotong Royong" class="w-full h-full object-cover">
+        </div>
+        <h4 class="font-bold text-xl mb-2" id="card2-title">Gotong Royong</h4>
+        <p class="text-gray-600 dark:text-gray-300" id="card2-text">
+          Semangat kebersamaan dan gotong royong menjadi identitas utama masyarakat Tegalsempu.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition dark:bg-gray-800 dark:text-gray-200">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-lg overflow-hidden">
+          <img src="Assets/harmoni.png" alt="Harmoni" class="w-full h-full object-cover">
+        </div>
+        <h4 class="font-bold text-xl mb-2" id="card3-title">Harmoni Alam</h4>
+        <p class="text-gray-600 dark:text-gray-300" id="card3-text">
+          Desa yang gemah ripah lohjinawi dengan keindahan alam dan suasana harmonis antarwarga.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-green-800 text-white py-10">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-start gap-6 px-6">
+      <div class="flex-1 min-w-[250px] text-center md:text-left">
+        <a href="https://www.youtube.com/@tegalsemputv" target="_blank">
+          <img src="Assets/youtube.png" alt="YouTube" class="w-14 mx-auto md:mx-0 mb-4">
+        </a>
+        <h3 class="text-xl font-bold" id="footer-title">PADUKUHAN TEGALSEMPU</h3>
+        <p class="mt-2 text-sm" id="footer-desc">
+          Website Resmi Pemerintah Padukuhan Tegalsempu,<br>
+          Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul
+        </p>
+      </div>
+
+      <div class="flex-1 min-w-[250px]">
+        <h3 class="font-bold text-lg mb-2" id="footer-contact">HUBUNGI KAMI</h3>
+        <p class="text-sm leading-relaxed" id="footer-address">
+          Jalan Tegalsempu,<br>
+          Padukuhan Tegalsempu, Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul<br>
+          Provinsi Daerah Istimewa Yogyakarta, Indonesia, 55761.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center border-t border-gray-400 mt-6 pt-4 text-sm">
+      <p>&copy; 2025 Padukuhan Tegalsempu. All Rights Reserved.</p>
+      <p><b>KKN Reguler 145 UAD Unit V.D.2</b></p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Data Bahasa
+    const langData = {
+      id: {
+        "nav-home": "Beranda",
+        "nav-profile": "Profil",
+        "nav-census": "Sensus",
+        "nav-docs": "Dokumentasi",
+        "hero-title": "Selamat Datang di Website Resmi",
+        "hero-subtitle": "Padukuhan Tegalsempu, Desa Caturharjo, Kecamatan Pandak",
+        "about-title": "Tentang Padukuhan Kami",
+        "card1-title": "Mayoritas Petani",
+        "card1-text": "Warga Tegalsempu mayoritas bekerja sebagai petani, menjaga ketahanan pangan dan kelestarian lingkungan.",
+        "card2-title": "Gotong Royong",
+        "card2-text": "Semangat kebersamaan dan gotong royong menjadi identitas utama masyarakat Tegalsempu.",
+        "card3-title": "Harmoni Alam",
+        "card3-text": "Desa yang gemah ripah lohjinawi dengan keindahan alam dan suasana harmonis antarwarga.",
+        "footer-title": "PADUKUHAN TEGALSEMPU",
+        "footer-desc": "Website Resmi Pemerintah Padukuhan Tegalsempu,<br> Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul",
+        "footer-contact": "HUBUNGI KAMI",
+        "footer-address": "Jalan Tegalsempu,<br>Padukuhan Tegalsempu, Desa Caturharjo, Kecamatan Pandak, Kabupaten Bantul<br>Provinsi DIY, Indonesia, 55761."
+      },
+      en: {
+        "nav-home": "Home",
+        "nav-profile": "Profile",
+        "nav-census": "Census",
+        "nav-docs": "Documentation",
+        "hero-title": "Welcome to the Official Website",
+        "hero-subtitle": "Tegalsempu Hamlet, Caturharjo Village, Pandak District",
+        "about-title": "About Our Hamlet",
+        "card1-title": "Majority Farmers",
+        "card1-text": "Most Tegalsempu residents work as farmers, maintaining food security and environmental sustainability.",
+        "card2-title": "Mutual Cooperation",
+        "card2-text": "The spirit of togetherness and cooperation is the main identity of Tegalsempu people.",
+        "card3-title": "Harmony with Nature",
+        "card3-text": "A prosperous hamlet with natural beauty and harmonious community life.",
+        "footer-title": "TEGALSEMPU HAMLET",
+        "footer-desc": "Official Website of Tegalsempu Hamlet,<br> Caturharjo Village, Pandak District, Bantul Regency",
+        "footer-contact": "CONTACT US",
+        "footer-address": "Tegalsempu Street,<br>Tegalsempu Hamlet, Caturharjo Village, Pandak District, Bantul Regency<br>Special Region of Yogyakarta, Indonesia, 55761."
+      }
+    };
+
+    // Toggle Bahasa
+    const langToggle = document.getElementById("langToggle");
+    let currentLang = "id";
+    langToggle.addEventListener("click", () => {
+      currentLang = currentLang === "id" ? "en" : "id";
+      for (const key in langData[currentLang]) {
+        const el = document.getElementById(key);
+        if (el) el.innerHTML = langData[currentLang][key];
+      }
+      langToggle.innerText = currentLang === "id" ? "EN" : "ID";
+    });
+
+    // Toggle Dark Mode
+    const modeToggle = document.getElementById("modeToggle");
+    const body = document.getElementById("body");
+    modeToggle.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        modeToggle.innerText = "☀️";
+        body.classList.replace("bg-gray-100", "bg-gray-900");
+      } else {
+        modeToggle.innerText = "🌙";
+        body.classList.replace("bg-gray-900", "bg-gray-100");
+      }
+    });
+  </script>
+</body>
+</html>
